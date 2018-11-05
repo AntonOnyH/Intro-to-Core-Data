@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77FB76A42190744200453C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76A32190744200453C05 /* AppDelegate.swift */; };
+		77FB76A62190744200453C05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76A52190744200453C05 /* ViewController.swift */; };
+		77FB76A92190744200453C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FB76A72190744200453C05 /* Main.storyboard */; };
+		77FB76AC2190744200453C05 /* Let_it_snow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76AA2190744200453C05 /* Let_it_snow.xcdatamodeld */; };
+		77FB76AE2190744400453C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FB76AD2190744400453C05 /* Assets.xcassets */; };
+		77FB76B12190744400453C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FB76AF2190744400453C05 /* LaunchScreen.storyboard */; };
+		77FB76BC219075F100453C05 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76B8219075F100453C05 /* Lesson+CoreDataClass.swift */; };
+		77FB76BD219075F100453C05 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76B9219075F100453C05 /* Lesson+CoreDataProperties.swift */; };
+		77FB76BE219075F100453C05 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76BA219075F100453C05 /* Student+CoreDataClass.swift */; };
+		77FB76BF219075F100453C05 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76BB219075F100453C05 /* Student+CoreDataProperties.swift */; };
+		77FB76C221907A1F00453C05 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76C121907A1F00453C05 /* LessonTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77FB76A02190744200453C05 /* Let it snow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let it snow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FB76A32190744200453C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77FB76A52190744200453C05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77FB76A82190744200453C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77FB76AB2190744200453C05 /* Let_it_snow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Let_it_snow.xcdatamodel; sourceTree = "<group>"; };
+		77FB76AD2190744400453C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77FB76B02190744400453C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77FB76B22190744400453C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77FB76B8219075F100453C05 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FB76B9219075F100453C05 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77FB76BA219075F100453C05 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FB76BB219075F100453C05 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77FB76C121907A1F00453C05 /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77FB769D2190744200453C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77FB76972190744200453C05 = {
+			isa = PBXGroup;
+			children = (
+				77FB76C02190764C00453C05 /* DataModel */,
+				77FB76A22190744200453C05 /* Let it snow */,
+				77FB76A12190744200453C05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77FB76A12190744200453C05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77FB76A02190744200453C05 /* Let it snow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77FB76A22190744200453C05 /* Let it snow */ = {
+			isa = PBXGroup;
+			children = (
+				77FB76A32190744200453C05 /* AppDelegate.swift */,
+				77FB76A52190744200453C05 /* ViewController.swift */,
+				77FB76A72190744200453C05 /* Main.storyboard */,
+				77FB76C321907A2A00453C05 /* Controllers */,
+				77FB76AD2190744400453C05 /* Assets.xcassets */,
+				77FB76AF2190744400453C05 /* LaunchScreen.storyboard */,
+				77FB76B22190744400453C05 /* Info.plist */,
+			);
+			path = "Let it snow";
+			sourceTree = "<group>";
+		};
+		77FB76C02190764C00453C05 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				77FB76AA2190744200453C05 /* Let_it_snow.xcdatamodeld */,
+				77FB76B8219075F100453C05 /* Lesson+CoreDataClass.swift */,
+				77FB76B9219075F100453C05 /* Lesson+CoreDataProperties.swift */,
+				77FB76BA219075F100453C05 /* Student+CoreDataClass.swift */,
+				77FB76BB219075F100453C05 /* Student+CoreDataProperties.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		77FB76C321907A2A00453C05 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77FB76C121907A1F00453C05 /* LessonTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77FB769F2190744200453C05 /* Let it snow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77FB76B52190744400453C05 /* Build configuration list for PBXNativeTarget "Let it snow" */;
+			buildPhases = (
+				77FB769C2190744200453C05 /* Sources */,
+				77FB769D2190744200453C05 /* Frameworks */,
+				77FB769E2190744200453C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Let it snow";
+			productName = "Let it snow";
+			productReference = 77FB76A02190744200453C05 /* Let it snow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77FB76982190744200453C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = antonsolo;
+				TargetAttributes = {
+					77FB769F2190744200453C05 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 77FB769B2190744200453C05 /* Build configuration list for PBXProject "Let it snow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77FB76972190744200453C05;
+			productRefGroup = 77FB76A12190744200453C05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77FB769F2190744200453C05 /* Let it snow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77FB769E2190744200453C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FB76B12190744400453C05 /* LaunchScreen.storyboard in Resources */,
+				77FB76AE2190744400453C05 /* Assets.xcassets in Resources */,
+				77FB76A92190744200453C05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77FB769C2190744200453C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FB76A62190744200453C05 /* ViewController.swift in Sources */,
+				77FB76BE219075F100453C05 /* Student+CoreDataClass.swift in Sources */,
+				77FB76BC219075F100453C05 /* Lesson+CoreDataClass.swift in Sources */,
+				77FB76BD219075F100453C05 /* Lesson+CoreDataProperties.swift in Sources */,
+				77FB76AC2190744200453C05 /* Let_it_snow.xcdatamodeld in Sources */,
+				77FB76C221907A1F00453C05 /* LessonTableViewController.swift in Sources */,
+				77FB76A42190744200453C05 /* AppDelegate.swift in Sources */,
+				77FB76BF219075F100453C05 /* Student+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77FB76A72190744200453C05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77FB76A82190744200453C05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77FB76AF2190744400453C05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77FB76B02190744400453C05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77FB76B32190744400453C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77FB76B42190744400453C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77FB76B62190744400453C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGL6HPWPPW;
+				INFOPLIST_FILE = "Let it snow/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "a-solo.Let-it-snow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77FB76B72190744400453C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGL6HPWPPW;
+				INFOPLIST_FILE = "Let it snow/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "a-solo.Let-it-snow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77FB769B2190744200453C05 /* Build configuration list for PBXProject "Let it snow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77FB76B32190744400453C05 /* Debug */,
+				77FB76B42190744400453C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77FB76B52190744400453C05 /* Build configuration list for PBXNativeTarget "Let it snow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77FB76B62190744400453C05 /* Debug */,
+				77FB76B72190744400453C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77FB76AA2190744200453C05 /* Let_it_snow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77FB76AB2190744200453C05 /* Let_it_snow.xcdatamodel */,
+			);
+			currentVersion = 77FB76AB2190744200453C05 /* Let_it_snow.xcdatamodel */;
+			path = Let_it_snow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 77FB76982190744200453C05 /* Project object */;
+}
