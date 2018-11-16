@@ -18,6 +18,7 @@
 		77FB76BE219075F100453C05 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76BA219075F100453C05 /* Student+CoreDataClass.swift */; };
 		77FB76BF219075F100453C05 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76BB219075F100453C05 /* Student+CoreDataProperties.swift */; };
 		77FB76C221907A1F00453C05 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76C121907A1F00453C05 /* LessonTableViewController.swift */; };
+		77FB76C52190871A00453C05 /* LessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB76C42190871A00453C05 /* LessonService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		77FB76BA219075F100453C05 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
 		77FB76BB219075F100453C05 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		77FB76C121907A1F00453C05 /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		77FB76C42190871A00453C05 /* LessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				77FB76A32190744200453C05 /* AppDelegate.swift */,
 				77FB76A52190744200453C05 /* ViewController.swift */,
 				77FB76A72190744200453C05 /* Main.storyboard */,
+				77FB76C62190872100453C05 /* Service */,
 				77FB76C321907A2A00453C05 /* Controllers */,
 				77FB76AD2190744400453C05 /* Assets.xcassets */,
 				77FB76AF2190744400453C05 /* LaunchScreen.storyboard */,
@@ -96,6 +99,14 @@
 				77FB76C121907A1F00453C05 /* LessonTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77FB76C62190872100453C05 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				77FB76C42190871A00453C05 /* LessonService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				77FB76A62190744200453C05 /* ViewController.swift in Sources */,
 				77FB76BE219075F100453C05 /* Student+CoreDataClass.swift in Sources */,
 				77FB76BC219075F100453C05 /* Lesson+CoreDataClass.swift in Sources */,
+				77FB76C52190871A00453C05 /* LessonService.swift in Sources */,
 				77FB76BD219075F100453C05 /* Lesson+CoreDataProperties.swift in Sources */,
 				77FB76AC2190744200453C05 /* Let_it_snow.xcdatamodeld in Sources */,
 				77FB76C221907A1F00453C05 /* LessonTableViewController.swift in Sources */,

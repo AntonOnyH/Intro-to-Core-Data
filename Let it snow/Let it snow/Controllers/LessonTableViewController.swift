@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import CoreData
 
 class LessonTableViewController: UITableViewController {
     
-    let student = ["Ben", "John", "Mary"]
+    var moc: NSManagedObjectContext? {
+        didSet {
+            if let moc = moc {
+                lessonService = LessonService(moc: moc)
+            }
+        }
+    }
+    
+    //Mark: - Private Properties
+    private var studentList = [Student]()
+    private var lessonService: LessonService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+     
     }
     
     // MARK: - Table view data source
@@ -30,14 +37,14 @@ class LessonTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return student.count
+        return studentList.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath)
         
-        cell.textLabel?.text = student[indexPath.row]
+        cell.textLabel?.text = studentList[indexPath.row]
         return cell
     }
     
@@ -55,8 +62,22 @@ class LessonTableViewController: UITableViewController {
         alertController.addTextField { (textField: UITextField) in
             textField.placeholder = "Lesson Type: Ski | SnowBoard"
         }
-        let defaultAction = UIAlertAction(title: actionType.uppercased(), style: .default) { (action) in
+        let defaultAction = UIAlertAction(title: actionType.uppercased(), style: .default) { [weak self](action) in
+            guard let studentName = alertController.textFields![0].text, let lesson = alertController.textFields?[1].text else { return }
             
+            if actionType.caseInsensitiveCompare("add") == .orderedSame {
+                if let lessonType = LessonType(rawValue: lesson.lowercased()) {
+                    self?.lessonService?.addStudent(name: studentName, for: lessonType, completion: { (success, students) in
+                        if success {
+                           self?.studentList = students
+                        }
+                    })
+                }
+            }
+            
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
         
         let cancelledAction = UIAlertAction(title: "Cancel", style: .default) { (action) in
